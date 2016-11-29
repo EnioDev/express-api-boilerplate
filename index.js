@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-// chamadas cross-origin
+// necessário para chamadas cross-origin
 app.use(function (req, res, next) {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
